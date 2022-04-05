@@ -1,3 +1,8 @@
+input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
 div{
     margin: 6px;
 }
@@ -11,4 +16,90 @@ fieldset{
     justify-content: center;
     width: 90vw;
     height: auto;
+}
+hr{
+    height: 2px;
+    background-color: black;
+}
+
+
+.head-line{
+    height: 6px;
+    background-color: black;
+    width: 12vw;
+}
+h3{
+    font-weight: bold;
+}
+
+
+#gesch1{
+    margin-right: -2px;
+    width: 70px;
+   
+}
+
+
+
+#gesch2{
+    width: 75px;   
+}
+
+.sprach input {
+    width: 50px;
+}
+
+
+
+button{
+    background-color: red;
+    position: absolute;
+    left: 55%;
+    margin: 20px;
+    height: 40px;
+    color: white;
+    padding: 10px;
+}
+
+#adres1{
+width: 80%;
+
+}
+#adres2{
+
+    width: 20%; 
+}
+
+
+.adres-haus input:first-of-type{
+    width: 60%;
+    margin-right: 10px;
+}
+
+.adres-haus input:last-child{
+    width: 10%;
+}
+
+.plz-ort input:first-of-type{
+    width: 10%;
+    margin-left: 10px; 
+}
+.plz-ort input:last-child{
+    width: 60%;
+    margin-right: 10px; 
+}
+
+
+.kanton-land input:first-of-type{
+    width: 10%;
+    margin-left: 10px; 
+}
+.kanton-land input:last-child{
+    width: 60%;
+
+}
+
+
+.active{
+    border-bottom: 3px red solid   
 }

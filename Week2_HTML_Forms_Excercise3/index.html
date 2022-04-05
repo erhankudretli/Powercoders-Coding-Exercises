@@ -11,7 +11,7 @@
 <div class="container">
   <body>
     <form action="mailto:#">
-        <div class="head line"></div>
+        <div class="head-line"></div>
         <h3>Profile</h3>
         <span><b>Hier können Sie Ihnre Adress-Angaben insehen und anpassen. </b> </span>
 
@@ -42,17 +42,19 @@
 
           <div>
             <label for="gesch">Geschlecth:</label>
-            <input class="favorite styled" id="gesch" type="radio" checked="checked" >
-            <input class="favorite styled" id="gesch" type="button" value="M">
-            <input class="favorite styled" id="gesch" type="radio"  >
-            <input class="favorite styled" id="gesch" type="button" value="W">
+            <span id="gesArea">
+              <input onclick="myfunction(this)" class="" id="gesch1" type="button" value="M">
+              <input onclick="myfunction(this)" class="active" id="gesch2" type="button" value="W">
+            </span>
+          
+           
 
           </div>
-          <div>
+          <div id="myDIV" class="sprach">
             <label for="sprache">Sprache:</label>
-            <input class="favorite styled" id="sprache" type="button" value="DE">
-            <input class="favorite styled" id="sprache" type="button" value="FR">
-            <input class="favorite styled" id="sprache" type="button" value="IT">
+            <input onclick="myfunction(this)" class="btn active" id="sprache" type="button" value="DE">
+            <input onclick="myfunction(this)" class="btn" id="sprache" type="button" value="FR">
+            <input onclick="myfunction(this)" class="btn" id="sprache" type="button" value="IT">
           </div>
           </fieldset>
           <hr>
@@ -66,15 +68,15 @@
               </div>
               <div>
                 <label for="mobile">Mobile:</label>
-                <input type="tel" id="mobile" name="mobile">
+                <input type="tel" placeholder="optionel" id="mobile" name="mobile">
             </div>
             <div>
               <label for="hauptnumber">Hauptnumber:</label>
-              <input type="number" id="hauptnumber" name="hauptnumber">
+              <input placeholder="optionel" type="number" id="hauptnumber" name="hauptnumber">
             </div>
             <div>
               <label for="fax">Fax:</label>
-              <input type="number" id="fax" name="fax">
+              <input placeholder="optionel" type="tel" id="fax" name="fax">
             </div>
             <div>
               <label for="email">Mail 1:</label>
@@ -99,31 +101,36 @@
 
   <div>
     <label for="zusatz">Zusatz Firma:</label>
-    <input type=" text" id="zusatz" name="zusatz">
+    <input placeholder="optionel" type=" text" id="zusatz" name="zusatz">
 </div>
-<div>
-  <label for="hauptnumber">Hauptnumber:</label>
-  <input type="number" id="hauptnumber" name="hauptnumber">
-</div>
+
 <div>
   <label for="homepage">Homepage:</label>
-  <input type="text" id="homepage" name="homepage">
+  <input placeholder="optionel" type="text" id="homepage" name="homepage">
 </div>
+
+<div class="adres-haus" >
+  <label for="adres">Adresse/Haus Nr</label>
+  <input required type="text" id="adres" name="adres">
+  <input required type="number" id="adres" name="adres">
+</div>
+
 <div>
-  <label for="email">Adresse / Haus Nr</label>
-  <input required type="email" id="email" name="email">
-  <input required type="email" id="email" name="email">
+  <label for="hauptnumber">Zusatz Adress:</label>
+  <input placeholder="optionel" type="number" id="hauptnumber" name="hauptnumber">
 </div>
+
+
 <div>
   <label for="postfach">Postfach</label>
-  <input  type="text" id="postfach" name="postfach">
+  <input placeholder="optionel"  type="text" id="postfach" name="postfach">
 </div>  
-<div>
+<div class="plz-ort">
   <label for="email">PLZ / Ort</label>
-  <input required type="email" id="email" name="email">
-  <input required type="email" id="email" name="email">
+  <input required type="number" id="email" name="email">
+  <input required type="text" id="email" name="email">
 </div>
-<div>
+<div class="kanton-land">
   <label for="email">Kanton / Land</label>
   <input required type="email" id="email" name="email">
   <input required type="email" id="email" name="email">
@@ -141,7 +148,7 @@
     </form>
 
 
-
+<script src="app.js"></script>
 </div>
 </body>
 </html>
