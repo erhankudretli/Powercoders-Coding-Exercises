@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="container">
+  <body>
+    <form action="mailto:#">
+        <div class="head line"></div>
+        <h3>Profile</h3>
+        <span><b>Hier können Sie Ihnre Adress-Angaben insehen und anpassen. </b> </span>
+
+        <hr>
+        
+        <!--- First Area --->
+        <fieldset>
+            <legend>Personlishe Daten</legend>
+
+            <div>
+            <label for="cars">Titel</label>
+            <select id="title" name="title">
+              <option value="herren">Herren</option>
+              <option value="frau">Frau</option>
+              <option value="no">No</option>
+            </select>
+            </div>
+
+
+            <div>
+              <label for="fname">Vorname:</label>
+              <input type="text" id="fname" name="fname">
+          </div>
+          <div>
+            <label for="lname">Nahtname:</label>
+            <input type="text" id="lname" name="lname">
+          </div>
+
+          <div>
+            <label for="gesch">Geschlecth:</label>
+            <input class="favorite styled" id="gesch" type="radio" checked="checked" >
+            <input class="favorite styled" id="gesch" type="button" value="M">
+            <input class="favorite styled" id="gesch" type="radio"  >
+            <input class="favorite styled" id="gesch" type="button" value="W">
+
+          </div>
+          <div>
+            <label for="sprache">Sprache:</label>
+            <input class="favorite styled" id="sprache" type="button" value="DE">
+            <input class="favorite styled" id="sprache" type="button" value="FR">
+            <input class="favorite styled" id="sprache" type="button" value="IT">
+          </div>
+          </fieldset>
+          <hr>
+
+<!--- Second Area --->
+          <fieldset>
+              <legend>KontaktDaten</legend>
+              <div>
+              <label for="telefon">Telefon</label>
+              <input required type="tel" id="telefon" name="telefon">
+              </div>
+              <div>
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile" name="mobile">
+            </div>
+            <div>
+              <label for="hauptnumber">Hauptnumber:</label>
+              <input type="number" id="hauptnumber" name="hauptnumber">
+            </div>
+            <div>
+              <label for="fax">Fax:</label>
+              <input type="number" id="fax" name="fax">
+            </div>
+            <div>
+              <label for="email">Mail 1:</label>
+              <input required type="email" id="email" name="email">
+            </div>
+            <div>
+              <label for="email2">Mail 2:</label>
+              <input  type="email" id="email2" name="email2">
+            </div>  
+            </fieldset>
+<hr>
+
+<!--- Third Area --->
+<fieldset>
+  <legend>Adressdaten</legend>
+
+  <div>
+  <label for="firma">Firma</label>
+  <input required type="text" id="firma" name="firma">
+  </div>
+
+
+  <div>
+    <label for="zusatz">Zusatz Firma:</label>
+    <input type=" text" id="zusatz" name="zusatz">
+</div>
+<div>
+  <label for="hauptnumber">Hauptnumber:</label>
+  <input type="number" id="hauptnumber" name="hauptnumber">
+</div>
+<div>
+  <label for="homepage">Homepage:</label>
+  <input type="text" id="homepage" name="homepage">
+</div>
+<div>
+  <label for="email">Adresse / Haus Nr</label>
+  <input required type="email" id="email" name="email">
+  <input required type="email" id="email" name="email">
+</div>
+<div>
+  <label for="postfach">Postfach</label>
+  <input  type="text" id="postfach" name="postfach">
+</div>  
+<div>
+  <label for="email">PLZ / Ort</label>
+  <input required type="email" id="email" name="email">
+  <input required type="email" id="email" name="email">
+</div>
+<div>
+  <label for="email">Kanton / Land</label>
+  <input required type="email" id="email" name="email">
+  <input required type="email" id="email" name="email">
+</div>
+
+
+<button type="submit" >Speichern</button>
+
+
+
+
+</fieldset>
+
+
+    </form>
+
+
+
+</div>
+</body>
+</html>

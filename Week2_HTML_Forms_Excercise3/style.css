@@ -1,0 +1,14 @@
+div{
+    margin: 6px;
+}
+
+fieldset{
+    border: 0px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    height: auto;
+}
