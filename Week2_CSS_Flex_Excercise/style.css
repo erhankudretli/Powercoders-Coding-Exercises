@@ -1,0 +1,125 @@
+/* Global Area */
+html {
+    box-sizing: border-box;
+}
+
+body {
+
+    background: url("./img_bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(5, 4, 4, 0.7);
+    height: 100%;
+}
+
+button {
+    background-color: red;
+    color: white;
+    font-size: large;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: rgb(224, 14, 14);
+}
+
+/* Header Area */
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+img {
+    height: 110px;
+    width: 220px;
+    margin-left: 2vw;
+}
+
+.hd-left {
+    margin-top: 4vh;
+    margin-right: 4vh;
+}
+
+#lng-btn {
+    background-color: rgba(255, 254, 254, 0.003);
+    width: 6rem;
+    height: 3rem;
+
+}
+
+#sign-btn {
+    width: 6rem;
+    height: 3rem;
+    margin-left: 1em;
+}
+
+select {
+    border: none;
+    font-size: 1em;
+    background-color: rgba(255, 254, 254, 0.1);
+    color: white
+}
+
+select option {
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+/* Main Area */
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 3.125rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.625rem;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 23px;
+}
+
+
+input {
+    height: 4em;
+    width: 29em;
+}
+
+#get-started {
+    width: 10em;
+    height: 60px;
+    margin-left: -3px;
+}
+
