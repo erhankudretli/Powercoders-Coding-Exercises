@@ -1,0 +1,105 @@
+html{
+    box-sizing: border-box;
+    font-size: 10px;
+    height: 100%;
+text-align: center;
+    background-color: lightgray;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+*{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 3rem;
+
+}
+body{
+    margin: 0;
+}
+
+main{
+    background: white;
+    margin: 5rem auto;
+    max-width: 112rem;
+    padding: 5rem 2rem;
+    width: 90%;
+
+}
+
+#sec{
+    display: grid;
+   
+    grid-template-areas:
+    'content1'
+    'content2'
+    'content3'
+    'content4'
+    ;
+
+}
+
+h1{
+    color: rgba(0,0,0,0.5);
+    font-weight: lighter;
+}
+strong{
+    color: black;
+}
+h3{
+    color: rgba(0,0,0,0.5);
+    font-weight: lighter;
+}
+p{
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+img{
+    max-width: 100%;
+    width: auto;
+}
+
+section{
+    margin: 3.3rem;
+}
+
+section:nth-of-type(1){
+    grid-area: content1;
+}
+section:nth-of-type(2){
+    grid-area: content2;
+}
+section:nth-of-type(3){
+    grid-area: content3;
+}
+section:nth-of-type(4){
+    grid-area: content4;
+}
+
+button{
+    background-color: white;
+    padding: 1rem 7rem;
+}
+
+
+
+/*tablet*/
+@media screen and (min-width:1024px) {
+    #sec{
+        grid-template-columns: repeat(2, minmax(10rem,1fr));
+       
+        grid-template-areas:
+        'content1 content2'
+        'content3 content4'
+        ;
+    
+    }
+        
+    }
+    /*desktop*/
+    @media screen and (min-width:1024px) {
+       
+        
+    }
