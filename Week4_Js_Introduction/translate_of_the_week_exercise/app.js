@@ -8,58 +8,49 @@ const daysOftheWeek = [
   "Sunday",
 ];
 
-// // with map & IF Statement
-
-// daysOftheWeek.forEach((day, index) => {
+// with map & IF Statement
+// const daysOftheWeekFrnch = daysOftheWeek.map((day, index) => {
 //   if (day === "Monday") {
-//     daysOftheWeek[index] = "Lundi";
-//   } else if (day === "Tuesday") {
-//     daysOftheWeek[index] = "MardiEr";
-//   } else if (day === "Wednesday") {
-//     daysOftheWeek[index] = "Mercredi";
-//   } else if (day === "Thursday") {
-//     daysOftheWeek[index] = "Jeudi";
-//   } else if (day === "Friday") {
-//     daysOftheWeek[index] = "Vendredi";
-//   } else if (day === "Saturday") {
-//     daysOftheWeek[index] = "Samedi";
-//   } else if (day === "Sunday") {
-//     daysOftheWeek[index] = "Dimanche";
+//     return "Lundi";
+//   }
+//   if (day === "Tuesday") {
+//     return "Mardi";
+//   }
+//   if (day === "Wednesday") {
+//     return "Mercredi";
+//   }
+//   if (day === "Thursday") {
+//     return "Jeudi";
+//   }
+//   if (day === "Friday") {
+//     return "Vendredi";
+//   }
+//   if (day === "Saturday") {
+//     return "Samedi";
+//   }
+//   if (day === "Sunday") {
+//     return "";
 //   }
 // });
 
-// console.log(daysOftheWeek);
+// console.log(daysOftheWeekFrnch);
 
 // with for & Switch
 let daysOftheWeekGerman = [];
 for (let index = 0; index < daysOftheWeek.length; index++) {
   let day = daysOftheWeek[index];
   switch (day) {
-    case day === "Monday":
-      daysOftheWeekGerman[index] = "Montag";
+    case "Monday":
+      daysOftheWeekGerman.push("Montag");
       break;
-    case day === "Tuesday":
-      daysOftheWeekGerman[index] = "Dienstag";
+    case "Monday":
+      daysOftheWeekGerman.push("Montag");
       break;
-
-    case day === "Wednesday":
-      daysOftheWeekGerman[index] = "Mittwoch";
+    case "Monday":
+      daysOftheWeekGerman.push("Montag");
       break;
-
-    case day === "Thursday":
-      daysOftheWeekGerman[index] = "Donnerstag";
-      break;
-
-    case day === "Friday":
-      daysOftheWeekGerman[index] = "Freitag";
-      break;
-
-    case day === "Saturday":
-      daysOftheWeekGerman[index] = "Samstag";
-      break;
-
-    case day === "Sunday":
-      daysOftheWeekGerman[index] = "Sonntag";
+    case "Monday":
+      daysOftheWeekGerman.push("Montag");
       break;
   }
 }

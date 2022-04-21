@@ -9,16 +9,14 @@ const createNumberArr = () => {
 const checkTheNumber = (index) => {
   if (index % 2 == 0) {
     showResult(index);
-  } else console.log(index + " is a ODD Number");
+  } else console.log(index + " is an ODD Number");
 };
 
 const showResult = (index) => {
-  console.log(index + " is a Even Number");
+  console.log(index + " is an Even Number");
 };
 
-const setApp = () => {
-  createNumberArr();
-  checkTheNumber();
-  showResult();
-};
-setApp();
+createNumberArr();
+
+let arr2 = Array.from(Array(21).keys());
+console.log("array 2: " + arr2);
