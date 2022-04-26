@@ -31,3 +31,9 @@ readline.question(`What's your name?`, (name) => {
     });
   });
 });
+
+console.log(`My story starts here. 
+The hero is ${myArr[0].name})
+The verb is ${myArr[0].vrb})
+The adverb is ${myArr[0].adv})
+The adjective is ${myArr[0].adj}`);
